@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 #from .models import Flavour#, Ice_cream, Topping, Milk_shake
-#import models
+
 
 def home(request):
     return render(request, 'shop/home.html')
