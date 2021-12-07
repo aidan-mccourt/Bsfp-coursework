@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-#from .models import Flavour#, Ice_cream, Topping, Milk_shake
+from .models import Flavour, Ice_cream, Topping, Milk_shake
 
 
 def home(request):
