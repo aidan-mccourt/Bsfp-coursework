@@ -1,15 +1,42 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-        <h1>Pick your ice-cream</h1>
-        <button type="button">
-            <a href="{% url 'shop:shop-flavour' %}">normal</a>
-        </button>
-        <button type="button">
-            <a href="{% url 'shop:shop-flavour' %}">dairy free</a>
-        </button>
-    </body>
-</html>
+{% extends "shop/base.html" %}
+{% block content %}
+    <div class="content-section">
+        <div>
+            <form method="get" > {%csrf_token%}
+                <h2>Pick your ice-cream</h2>
+                <select name = "cice">
+                    <option selected disabled="true">--Ice cream--</option>
+                    {% for result in ice_creams %}
+                    <option>{{ result.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div>
+                <h2>Pick your flavour</h2>
+                <select name = "cflav">
+                    <option selected disabled="true">--Flavour--</option>
+                    {% for result in flavours %}
+                    <option>{{ result.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div>
+                <h2>Pick your topping</h2>
+                <select name = "ctop">
+                    <option selected disabled="true">--Toppings--</option>
+                    {% for result in toppings %}
+                    <option>{{ result.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <input type = "submit" value="Submit">
+        </form>
+
+    </div>
+    <!--<div>
+        <h2>total cost:</h2>
+        <h3>{{ totcost }}</h3>
+    </div>-->
+
+{% endblock content %}
+
