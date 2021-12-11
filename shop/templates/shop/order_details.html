@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-    </head>
-    <body>
+{% extends "shop/base.html" %}
+{% block content %}
+
+    <div class="content-section">
         <h1>order details</h1>
-        <button type="button">
-            <a href="{% url 'shop:shop-home' %}">Order</a>
-        </button>
-    </body>
-</html>
+        <h2>Ice-cream {{cice}}</h2>
+        <h2>Flavour {{cflav}}</h2>
+        <h2>topping {{ctop}}</h2>
+
+        <h3>total cost  £{{tot}}</h3>t
+        
+
+      
+    </div>
+    <div>
+        <form method="POST">
+            {% csrf_token %}
+            <input type="submit" value="Confrirm">
+        </form>
+    </div>
+
+{% endblock content %}
