@@ -1,9 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-#rom shop.views import ice_cream
 
-#from shop.views import flavour, ice_cream, topping
+
+#create models for database tables here
 
 class Ice_cream(models.Model):
     name = models.CharField(max_length = 100, unique=True)
