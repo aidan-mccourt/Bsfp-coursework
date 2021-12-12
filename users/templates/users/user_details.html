@@ -1,6 +1,10 @@
 {% extends "shop/base.html" %}
 {% block content %}
-    <h1><!--need to add in extra fields-->
+    <h1><!--user details-->
         {{ user.username }}
     </h1>
+    <h2>{{user.first_name}}</h2>
+    <h2>{{user.last_name}}</h2>
+    <h2>{{user.email}}</h2>
+    
 {% endblock content %}
