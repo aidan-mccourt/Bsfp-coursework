@@ -9,6 +9,7 @@ Python v 3.10.0 or higher
 Django 2.2.24
 pytz 2021.3
 sqlparse 0.4.2
+coverage 6.2
 You will also need a virtual enviroment to run the server
 
 
