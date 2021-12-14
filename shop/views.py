@@ -9,7 +9,7 @@ def home(request):
     return render(request, 'shop/home.html')
     
 #views for each webpage - data from database is passed into here and then to the front end.
-#logic goes here, created milkshakes are saved to data base
+#logic goes here,
 def ice_cream(request):
 
 
@@ -40,7 +40,7 @@ def ice_cream(request):
 
 
 
-
+# created milkshakes are saved to data base
 def order_details(request):
     milk = request.session['x']
     ice = str(milk[0])
