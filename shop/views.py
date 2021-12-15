@@ -2,6 +2,7 @@ from django.shortcuts import redirect, render
 
 from .models import Flavour, Ice_cream, Topping, Milk_shake
 from django.contrib.auth.models import User
+import logging
 
 
 def home(request):
@@ -11,11 +12,12 @@ def home(request):
 #views for each webpage - data from database is passed into here and then to the front end.
 #logic goes here,
 def ice_cream(request):
-
-
+    logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.INFO)
+    logging.info("choices made")
 
 
     if 'cice' and 'cflav' and 'ctop' in request.GET:
+        
         
         cice = request.GET.getlist('cice')
         cflav = request.GET.getlist('cflav')
@@ -42,6 +44,7 @@ def ice_cream(request):
 
 # created milkshakes are saved to data base
 def order_details(request):
+    
     milk = request.session['x']
     ice = str(milk[0])
     flav = str(milk[1])
