@@ -26,7 +26,82 @@ You are also able to edit and add to the User and milke_shake tables as well if 
 ----project file location details----    
 The shop section of the repository contains the main webpages, models(database tables) and tests    
 The user section contains the register form for usres and logining in    
-The html for each web page is located in templates and the css is located in static    
+The html for each web page is located in templates and the css is located in static   
+
+----File Structure----  
+
+|__.github  
+|     |__workflows   
+|           |__django_ci.yml  
+|__.vscode
+|     |__settings.json
+|__make_a_shake
+|        |__pychache__
+|        |      |__init__.cpython
+|        |      |__settings.cpython
+|        |      |__urls.cpython
+|        |      |__wsgi.cpython
+|        |__init__.py
+|        |__settings.py
+|        |__urls.py
+|        |__wsgi.py
+|__shop
+|    |__pychache__
+|    |      |__init__.cpython
+|    |      |__admin.cpython
+|    |      |__apps.cpython
+|    |      |__models.cpython
+|    |      |__tests.cpython
+|    |      |__urls.cpython
+|    |      |__views.cpython
+|    |__migrations
+|    |__static
+|    |      |__shop
+|    |          |__main.css
+|    |__templates
+|    |      |__shop
+|    |          |__base.html
+|    |          |__home.html
+|    |          |__ice_cream.html
+|    |          |__order_details.html
+|    |__init__.py
+|    |__admin.py
+|    |__apps.py
+|    |__models.py
+|    |__tests.py
+|    |__urls.py
+|    |__views.py
+|__users
+|    |__pychache__
+|    |      |__init__.cpython
+|    |      |__admin.cpython
+|    |      |__apps.cpython
+|    |      |__models.cpython
+|    |      |__tests.cpython
+|    |      |__urls.cpython
+|    |      |__views.cpython 
+|    |__migrations
+|    |__templates
+|    |      |__shop
+|    |          |__login.html
+|    |          |__logout.html
+|    |          |__register.html
+|    |          |__user_details.html
+|    |__init__.py
+|    |__admin.py
+|    |__apps.py
+|    |__forma.py
+|    |__models.py
+|    |__tests.py
+|    |__views.py
+|__.coverage
+|__db.sqlite3
+|__Docker
+|__docker-compose.yml
+|__example.log
+|__manage.py
+|__readMe.md
+|__requirements.txt
 
 
 ----to run the server----     
