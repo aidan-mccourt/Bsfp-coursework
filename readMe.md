@@ -31,24 +31,24 @@ The html for each web page is located in templates and the css is located in sta
 ----File Structure----  
 
 ├───.github     
-│   └───workflows      
+│     └───workflows      
 ├───.vscode      
 ├───make_a_shake      
-│   └───__pycache__     
+│     └───__pycache__     
 ├───shop     
-│   ├───migrations     
-│   │   └───__pycache__     
-│   ├───static      
-│   │   └───shop     
-│   ├───templates     
-│   │   └───shop     
-│   └───__pycache__     
+│     ├───migrations     
+│     │     └───__pycache__     
+│     ├───static      
+│     │     └───shop     
+│     ├───templates     
+│     │     └───shop     
+│     └───__pycache__     
 └───users      
-    ├───migrations     
-    │   └───__pycache__    
-    ├───templates    
-    │   └───users     
-    └───__pycache__     
+      ├───migrations     
+      │     └───__pycache__    
+      ├───templates    
+      │     └───users     
+      └───__pycache__     
 
 
 ----to run the server----     
