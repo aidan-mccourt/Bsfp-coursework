@@ -29,7 +29,7 @@ The user section contains the register form for usres and logining in
 The html for each web page is located in templates and the css is located in static   
 
 ----File Structure----  
-
+'''bash
 ├───.github     
 │     └───workflows      
 ├───.vscode      
@@ -49,7 +49,7 @@ The html for each web page is located in templates and the css is located in sta
       ├───templates    
       │     └───users     
       └───__pycache__     
-
+'''
 
 ----to run the server----     
 once you have navigated into the directory and are in your virtual enviroment run:    
